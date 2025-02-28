@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-22</title>
+    <link rel="stylesheet" href="app.css".css>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" media="screen and (max-width:758px)" href="phone2.css">
+<link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav>
+    <div class="logo">WEB-A22</div>
+    <ul class="navlist">
+        <li><a href="#">HOME</a></li>
+        <!-- <li><a href="#">CONATCT</a></li> -->
+        <li><a href="/study.html">MATERIALS</a></li>
+    </ul>
+    <div class="boxlogo" id="menu"><i class="ri-menu-line"></i></div>
+    
+</nav>
+<section class="intro">
+    <div class="introtext">
+        <h4>WELCOME TO THIS WEB</h4>
+        <h5>HERE YOU WILL GET ALL THE <br>RESOURCES </h5>
+        <a href="/study.html" class="start">CLASS MATERIALS <i class="ri-timeline-view"></i></a>
+    </div>
+    <div class="introimg">
+        <img src="./bg2.png" alt="">
+    </div>
+</section>
+<script src="https://unpkg.com/scrollreveal">
+     const sr = ScrollReveal({
+        distance :'65px',
+        duration :2600,
+        delay:450,
+        reset :true
+    });
+    sr.reveal('introtexts',{delay:200, origin:'top'});
+</script>
+<script>
+    
+    let menu = document.querySelector('#menu');
+    let navlist =document.querySelector('.navlist');
+    menu.onclick = ()=>{
+        menu.classList.toggle('bx-x');
+        navlist.classList.toggle('open');
+    }
+   
+</script>
+
+</body>
+</html>
